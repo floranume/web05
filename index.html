@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web05</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="nav-top">
+                    <div class="nav-left">
+                        <div class="logo">
+                            <img src="./images/logo_newdesign177x50 1.png" alt="">
+                        </div>
+                        <div class="nav-search">
+                            <form action="" class="search-form">
+                                <input type="text" placeholder="Nhập từ khóa..." class="search-input">
+                                <button class="search-btn">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </form>
+                            <div class="search-tag">
+                                <div class="tag-box">Tag</div>
+                                <span class="tag-item">#danhmuc1</span>
+                                <span class="tag-item">#danhmuc2</span>
+                                <span class="tag-item">#danhmuc3</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-right">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <span>
+                                    <img src="./images/house 1.png" alt="">
+                                </span>
+                                <p>Trang chủ</p>
+                            </li>
+                            <li class="nav-item">
+                                <span>
+                                    <img src="./images/light-bulb 1.png" alt="">
+                                </span>
+                                <p>Giới thiệu</p>
+                            </li>
+                            <li class="nav-item">
+                                <span>
+                                    <img src="./images/brick-wall 1.png" alt="">
+                                </span>
+                                <p>Sản phẩm</p>
+                            </li>
+                            <li class="nav-item">
+                                <span>
+                                    <img src="./images/price-tag 1.png" alt="">
+                                </span>
+                                <p>Báo giá</p>
+                            </li>
+                            <li class="nav-item">
+                                <span>
+                                    <img src="./images/hotel 1.png" alt="">
+                                </span>
+                                <p>Công trình</p>
+                            </li>
+                            <li class="nav-item">
+                                <span>
+                                    <img src="./images/restaurant 1.png" alt="">
+                                </span>
+                                <p>Liên hệ</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="nav-home">
+                    <ul class="nav-home-list">
+                        <li class="nav-home-item">Tấm ốp tường</li>
+                        <li class="nav-home-item">Tấm ốp trần</li>
+                        <li class="nav-home-item">Sàn nhựa cao cấp</li>
+                        <li class="nav-home-item">Giấy dán tường</li>
+                        <li class="nav-home-item">Thiết kế nội thất</li>
+                        <li class="nav-home-item">Tranh dán tường 3D</li>
+                        <li class="nav-home-item">Gỗ nhựa ngoài trời</li>
+                        <li class="nav-home-item">Bậc cầu thang</li>
+                    </ul>
+                </div>
+            </div>
+
+            <nav class="nav-fix navbar bg-body-tertiary fixed-top">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Offcanvas navbar</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar"
+                        aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                        aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Link</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Dropdown
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <form class="d-flex mt-3" role="search">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </header>
+    <div class="banner">
+        <div class="container">
+            <div class="banner-all row">
+
+                <div class="banner-left col-3">
+                    <div class="banner-left-top">
+
+
+                        <h6 class="left-t">DỰ ÁN ĐÃ HOÀN THÀNH</h6>
+
+                        <span>
+                            <img src="./images/Rectangle 55.png" alt="">
+                        </span>
+                    </div>
+
+                    <div class="banner-left-bot">
+                        <h6 class="left-b">DỰ ÁN ĐANG THỰC HIỆN</h6>
+                        <span>
+                            <img src="./images/Rectangle 55 (1).png" alt="">
+                        </span>
+                    </div>
+                </div>
+                <div class="banner-mid col-6">
+                    <div class="ima">
+
+                        <img src="./images/Rectangle 55 (2).png" alt="">
+                    </div>
+
+
+
+                    <div class="banner-mid-h">
+                        <p class="mid-h">Tiêu đề slider ghi ở đây</p>
+                        <p class="mid-h">Tiêu đề slider ghi ở đây</p>
+                        <p class="mid-h">Tiêu đề slider ghi ở đây</p>
+                        <p class="mid-h">Tiêu đề slider ghi ở đây</p>
+                    </div>
+
+
+
+                </div>
+                <div class="banner-right col-3">
+                    <!-- <span>
+                        <img src="./images/Đơn ảo.png" alt="">
+                    </span> -->
+                    <p class="r-h">Danh sách khách hàng vừa đặt hàng</p>
+                    <div class="banner-right-list">
+
+                        <div class="banner-right-item">
+                            Anh Dũng vừa đăng ký lịch tư vấn nội thất <b>30/10/2024</b>
+                        </div>
+                        <div class="banner-right-item">
+                            Anh Dũng vừa đăng ký lịch tư vấn nội thất <b>30/10/2024</b>
+                        </div>
+                        <div class="banner-right-item">
+                            Anh Dũng vừa đăng ký lịch tư vấn nội thất <b>30/10/2024</b>
+                        </div>
+                        <div class="banner-right-item">
+                            Anh Dũng vừa đăng ký lịch tư vấn nội thất <b>30/10/2024</b>
+                        </div>
+                        <div class=" bot">
+                            Anh Dũng vừa đăng ký lịch tư vấn nội thất <b>30/10/2024</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="banner-chinhsach">
+                <p>Chính sách mua hàng & thanh toán</p>
+            </div>
+        </div>
+    </div>
+    <div class="sanpham">
+        <div class="container">
+            <div class="sanpham-h">
+                <h4>SẢN PHẨM NỔI BẬT</h4>
+                <div class="sanpham-list">
+                    <div class="sp-item">
+                        <span>
+                            <img src="./images/tiles 2.png" alt="">
+                        </span>
+                        <p>Tấm ốp tường</p>
+                    </div>
+                    <div class="sp-item">
+                        <span>
+                            <img src="./images/bricks(1) 1.png" alt="">
+                        </span>
+                        <p>Sàn nhựa</p>
+                    </div>
+                    <div class="sp-item">
+                        <span>
+                            <img src="./images/floor 2.png" alt="">
+                        </span>
+                        <p>Giấy dán tường</p>
+                    </div>
+                    <div class="sp-item">
+                        <span>
+                            <img src="./images/stone 1.png" alt="">
+                        </span>
+                        <p>Tranh 3D</p>
+                    </div>
+                    <div class="sp-item">
+                        <span>
+                            <img src="./images/floor(1) 1.png" alt="">
+                        </span>
+                        <p>Gỗ nhựa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="sanpham-list ">
+                <div class="sanpham-item grid">
+                    <div class="sanpham-item-img grid-item1">
+                        <img src="./images/Rectangle 111.png" alt="">
+                    </div>
+                    <div class="sanpham-item-img grid-item2">
+                        <img src="./images/Rectangle 112.png" alt="">
+                    </div>
+                    <div class="sanpham-item-img grid-item3">
+                        <img src="./images/Rectangle 113.png" alt="">
+                    </div>
+                    <div class="sanpham-item-img grid-item4">
+                        <img src="./images/Rectangle 111 (1).png" alt="">
+                    </div>
+                    <div class="sanpham-item-img grid-item5">
+                        <img src="./images/Rectangle 112 (1).png" alt="">
+                    </div>
+                    <div class="sanpham-item-img grid-item6">
+                        <img src="./images/Rectangle 113 (1).png" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="congtrinh">
+        <div class="container">
+            <div class="congtrinh-h">
+                <h4>CÔNG TRÌNH ĐÃ THI CÔNG</h4>
+                <div class="congtrinh-list">
+                    <div class="sp-item">
+                        <span>
+                            <img src="./images/tiles 2.png" alt="">
+                        </span>
+                        <p>Tấm ốp tường</p>
+                    </div>
+                    <div class="sp-item">
+                        <span>
+                            <img src="./images/bricks(1) 1.png" alt="">
+                        </span>
+                        <p>Sàn nhựa</p>
+                    </div>
+                    <div class="sp-item">
+                        <span>
+                            <img src="./images/floor 2.png" alt="">
+                        </span>
+                        <p>Giấy dán tường</p>
+                    </div>
+                    <div class="sp-item">
+                        <span>
+                            <img src="./images/stone 1.png" alt="">
+                        </span>
+                        <p>Tranh 3D</p>
+                    </div>
+                    <div class="sp-item">
+                        <span>
+                            <img src="./images/floor(1) 1.png" alt="">
+                        </span>
+                        <p>Gỗ nhựa</p>
+                    </div>
+                </div>
+            </div>
+            <div class="congtrinh-list ">
+                <div class="congtrinh-item grid">
+                    <div class="sanpham-item-img grid-item1">
+                        <img src="./images/Rectangle 111 (2).png" alt="">
+                    </div>
+                    <div class="congtrinh-item-img grid-item2">
+                        <img src="./images/Rectangle 112 (2).png" alt="">
+                    </div>
+                    <div class="congtrinh-item-img grid-item3">
+                        <img src="./images/Rectangle 113 (2).png" alt="">
+                    </div>
+                    <div class="congtrinh-item-img grid-item4">
+                        <img src="./images/Rectangle 111 (3).png" alt="">
+                    </div>
+                    <div class="congtrinh-item-img grid-item5">
+                        <img src="./images/Rectangle 112 (3).png" alt="">
+                    </div>
+                    <div class="congtrinh-item-img grid-item6">
+                        <img src="./images/Rectangle 113 (3).png" alt="">
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+    <div class="banner-quangcao">
+
+        <img src="./images/banner-7131 1.png" alt="">
+
+    </div>
+    <div class="khacbiet">
+        <div class="container">
+            <div class="khacbiet-left">
+                <div class="khacbiet-left-h">
+                    <h4>Khác biệt của chúng tôi</h4>
+                    <p>Lý do bạn nên chọn nội thất Gia Phát</p>
+                </div>
+                <div class="khacbiet-left-nd">
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>Sunt quas adipisci delectus ab</p>
+                    <p>Lorem ipsum dolor sit amet</p>
+                    <p>Sunt quas adipisci delectus ab</p>
+
+                </div>
+            </div>
+            <div class="khacbiet-mid">
+                <img src="./images/Frame 973.png" alt="">
+            </div>
+            <div class="khacbiet-right">
+                <div class="khacbiet-right-h">
+                    <img src="./images/Frame 974.png" alt="">
+                </div>
+                <div class="khacbiet-left-nd">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Vel fringilla est ullamcorper eget nulla facilisi. Nibh tortor id
+                        aliquet lectus proin nibh nisl condimentum. Ultricies mi eget mauris pharetra et ultrices neque
+                        .</p>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="camnhan">
+        <div class="container">
+            <div class="camnhan-h">
+                <h4>CẢM NHẬN KHÁCH HÀNG</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quaerat. Voluptatem animi et obcaecati
+                    exercitationem. Sed obcaecati ab illo.
+                </p>
+            </div>
+
+            <div class="camnhan-video row">
+                <div class="video-item col-4">
+                    <img src="./images/1.png" alt="">
+                </div>
+                <div class="video-item col-4">
+                    <img src="./images/1.png" alt="">
+                </div>
+                <div class="video-item col-4">
+                    <img src="./images/1.png" alt="">
+                </div>
+            </div>
+
+            <div class="camnhan-bot"></div>
+        </div>
+
+    </div>
+    <div class="video">
+        <div class="container">
+            <div class="video-h">
+                <p>VIDEO CÔNG TRÌNH HOÀN THIỆN</p>
+            </div>
+            <div class="video-list row">
+                <div class="video-item col-4">
+                    <img src="./images/Group 110.png" alt="">
+                </div>
+                <div class="video-item col-4">
+                    <img src="./images/Group 112.png" alt="">
+                </div>
+                <div class="video-item col-4">
+                    <img src="./images/Group 112.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="thanhtuu">
+        <div class="container">
+            <div class="thanhtuu-h">
+                <h4>THÀNH TỰU CỦA CHÚNG TÔI</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quaerat. Voluptatem animi et obcaecati
+                    exercitationem. Sed obcaecati ab illo.</p>
+            </div>
+            <div class="thanhtuu-nd row">
+                <div class="thanhtuu-item col-3">
+                    <span>+2500</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nulla, incidunt aliquid
+                        recusandae tempora labore repellendus! Non perspiciatis eius iste sequi beatae molestiae cumque.
+                        Veritatis ipsam inventore adipisci culpa eius!</p>
+                </div>
+                <div class="thanhtuu-item col-3">
+                    <span>95%</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nulla, incidunt aliquid
+                        recusandae tempora labore repellendus! Non perspiciatis eius iste sequi beatae molestiae cumque.
+                        Veritatis ipsam inventore adipisci culpa eius!</p>
+                </div>
+                <div class="thanhtuu-item col-3">
+                    <span>+400</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nulla, incidunt aliquid
+                        recusandae tempora labore repellendus! Non perspiciatis eius iste sequi beatae molestiae cumque.
+                        Veritatis ipsam inventore adipisci culpa eius!</p>
+                </div>
+                <div class="thanhtuu-item col-3">
+                    <span>Đơn vị 3 KHÔNG</span>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto nulla, incidunt aliquid
+                        recusandae tempora labore repellendus! Non perspiciatis eius iste sequi beatae molestiae cumque.
+                        Veritatis ipsam inventore adipisci culpa eius!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="doitac">
+        <div class="container">
+            <div class="doitac-h">
+                <h4>ĐỐI TÁC CỦA CHÚNG TÔI</h4>
+            </div>
+            <div class="doitac-list row">
+                <div class="doitac-item col-2">
+                    <img src="./images/1 (1).png" alt="">
+                </div>
+                <div class="doitac-item col-2">
+                    <img src="./images/2.png" alt="">
+                </div>
+                <div class="doitac-item col-2">
+                    <img src="./images/3.png" alt="">
+                </div>
+                <div class="doitac-item col-2">
+                    <img src="./images/4.png" alt="">
+                </div>
+                <div class="doitac-item col-2">
+                    <img src="./images/5.png" alt="">
+                </div>
+                <div class="doitac-item col-2">
+                    <img src="./images/6.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="kinhnghiem">
+        <div class="container">
+            <div class="kinhnghiem-h">
+                <h4>KINH NGHIỆM HAY</h4>
+            </div>
+            <div class="kinhnghiem-nd row">
+                <div class="kn-img col-8">
+                    <img src="./images/Rectangle 123.png" alt="">
+                </div>
+                <div class="kn-nd col-4">
+                    <div class="kn-item">
+                        <p>Tiêu đề tin tức ghi ở đây: Lorem ipsum dolor sit amet.</p>
+                        <span>29-2-2024</span>
+                    </div>
+                    <div class="kn-item">
+                        <p>Tiêu đề tin tức ghi ở đây: Lorem ipsum dolor sit amet.</p>
+                        <span>29-2-2024</span>
+                    </div>
+                    <div class="kn-item">
+                        <p>Tiêu đề tin tức ghi ở đây: Lorem ipsum dolor sit amet.</p>
+                        <span>29-2-2024</span>
+                    </div>
+                    <div class="kn-item">
+                        <p>Tiêu đề tin tức ghi ở đây: Lorem ipsum dolor sit amet.</p>
+                        <span>29-2-2024</span>
+                    </div>
+                    <div class="kn-item">
+                        <p>Tiêu đề tin tức ghi ở đây: Lorem ipsum dolor sit amet.</p>
+                        <span>29-2-2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="bantin">
+        <div class="container">
+            <div class="row">
+
+                <div class="bantin-h col-4">
+                    <h4>ĐĂNG KÝ NHẬN BẢN TIN</h4>
+                    <div class="bantin-h-nd">
+                        <p>THỨ 2 - THỨ 7: 9 am - 6 pm</p>
+                        <p>HOLINE: 0961 177 355 </p>
+                    </div>
+                </div>
+                <div class="bantin-form1 col-4">
+                    <form action="" class="form-input">
+                        <div class="input-item">
+
+                            <input type="text" placeholder="Nhóm sản phẩm">
+                        </div>
+                        <div class="input-item">
+
+                            <input class="input" type="text" placeholder="Họ và tên">
+                        </div>
+                        <div class="input-item-con " style="display: flex;">
+
+                            <div class="input-item-3">
+
+                                <input style="width: 100%;" type="text" placeholder="Chọn phong cách">
+                            </div>
+                            <div class="input-item-3">
+
+                                <input style="width: calc(100% - 10px);margin-left: 10px;" type="text"
+                                    placeholder="Chọn khu vực">
+                            </div>
+                        </div>
+                        <div class="input-item">
+
+                            <input type="text" placeholder="Dịch vụ">
+                        </div>
+                    </form>
+
+                </div>
+                <div class="bantin-form2 col-4">
+                    <form action="" class="form-input">
+                        <div class="input-item">
+
+                            <input type="text" placeholder="Điện thoại">
+                        </div>
+                        <div class="input-item">
+
+                            <textarea name="" id="" cols="30" rows="3" placeholder="Ghi chú"></textarea>
+                        </div>
+                        <button class="bantin-btn">Đặt lịch ngay</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-logo">
+                <img src="./images/logo_newdesign177x50 1.png" alt="">
+            </div>
+
+            <div class="footer-addr">
+                <p>Hotline:0902 135 406</p>
+                <p>Địa chỉ: 4615/26 Đường số 59 Phường 14 Gò Vấp, TP.HCM</p>
+                <p>Xưởng thiết kế 2: 205 Xô Viết Nghệ Tĩnh, Khuê Trung, Cẩm Lệ, Đà NẵngM</p>
+                <p>Email: tamoptuonggiaphat.com </p>
+            </div>
+            <div class="footer-congthuong">
+                <img src="./images/Bộ Công Thương.png" alt="">
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 50,
+                stretch: 0,
+                depth: 100,
+                modifier: 1,
+                slideShadows: true,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+        });
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
